@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    .header-image {
+      border-radius: 10px;
+    }
 
     h2 {
       padding: 15px;
@@ -44,7 +47,7 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    .flex-center();
 
     .walk-text {
       width: 50%;
@@ -58,6 +61,20 @@
       }
 
       .btn {
+        font-size: 1.9rem;
+        color: @porcelain;
+        .flex();
+        .flex-center();
+        .custom-button(100px, 40px, 9px);
+        border: 1px solid @btn-bg-color;
+        background-color: @btn-bg-color;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+          color: @btn-bg-color;
+          background-color: @porcelain;
+        }
       }
     }
 

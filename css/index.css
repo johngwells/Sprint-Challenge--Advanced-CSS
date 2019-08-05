@@ -197,6 +197,35 @@ a {
   color: #454A59;
   margin-bottom: 10px;
 }
+form {
+  display: flex;
+  font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  form {
+    margin-top: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+form div {
+  padding: 10px 5px;
+}
+form input,
+form textarea {
+  width: 140px;
+  height: 2.5em;
+}
+@media (max-width: 500px) {
+  form input,
+  form textarea {
+    margin-top: 5px;
+    height: 2.5em;
+    width: 200px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -311,6 +340,13 @@ footer {
     height: 50px;
     padding-top: 15px;
   }
+}
+.home .walk .walk-text .btn a {
+  color: #F6F7F8;
+}
+.home .walk .walk-text .btn a:hover {
+  color: #22283A;
+  background-color: #F6F7F8;
 }
 .home .walk .walk-img {
   width: 46%;
